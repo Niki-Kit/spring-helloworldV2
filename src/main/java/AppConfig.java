@@ -13,7 +13,7 @@ public class AppConfig {
         return helloWorld;
     }
     @Bean(name="cat")
-    @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    @Scope("prototype")
     public Cat getCat() {
         Cat cat = new Cat();
         cat.setName("Musya");
